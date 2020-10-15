@@ -192,21 +192,4 @@ class Form {
     }
 }
 
-
-new Vue({
-    el: '#app',
-
-    data: {
-        form: new Form({
-            name: '',
-            description: ''
-        })
-    },
-
-    methods: {
-        onSubmit() {
-            this.form.post('/projects')
-                .then(response => alert('Wahoo!'));
-        }
-    }
-});
+export default Form;
